@@ -1,11 +1,66 @@
-# SMART-Forecasting
-Research Paper
+SMART FORECAST
+Predicting Urban Unemployment in Philippine Smart Cities
+📌 Overview
 
-This study aims to create a tool called SMART FORECASTING to help solve these problems. Specifically, we want to:
+SMART FORECAST is a web-based dashboard prototype designed to visualize and compare predicted urban unemployment trends in selected Philippine cities. The system aims to support data-driven decision-making for local government units by providing early insights into potential unemployment changes.
 
-- Build a machine learning model using XGBoost to predict unemployment in selected Philippine smart cities.
-- Look at how factors like inflation and population growth affect local jobs.
-- Test how accurate our model is compared to traditional ways of forecasting.
-- Create a simple system that displays these predictions so that city leaders can understand them easily.
+This project is developed as part of an academic research study at the University of San Jose-Recoletos, Cebu, Philippines.
 
-This research is important because it gives local leaders a "head start." Instead of waiting months for official reports, they can use these forecasts to see where unemployment might rise next. This helps them plan better job programs and use their budgets more effectively. Ultimately, this project is about using data to help Filipino workers find more stable opportunities in our growing cities.
+🎯 Objectives
+Provide a visual dashboard for unemployment forecasting in Philippine cities
+Compare predictions from:
+A modern predictive model (SMART Forecast)
+A traditional statistical approach
+Present data in an intuitive and accessible format for policymakers
+🧠 System Description
+
+The system is implemented as a web-based dashboard using Streamlit, allowing users to:
+
+View a map of the Philippines with major cities
+Select a city to display relevant information
+Compare unemployment predictions between two models
+Analyze key indicators such as:
+Population
+Unemployment rate (forecasted)
+⚙️ Technology Stack
+Python
+Streamlit – for dashboard interface
+Pandas – for data handling
+🤖 Machine Learning Approach
+
+This prototype does not implement a machine learning model from scratch.
+
+Instead, it is designed to integrate with a pre-trained machine learning model (e.g., XGBoost) for generating unemployment forecasts.
+
+This approach is suitable for the prototype stage and demonstrates how predictive analytics can be incorporated into a real-world system.
+
+🖥️ Features
+Interactive dashboard layout
+Split-screen interface:
+Left: Map visualization
+Right: City data panel
+Model comparison:
+SMART Forecast (ML-based)
+Traditional model (baseline)
+Simple and user-friendly design
+📊 Sample Data (Prototype Only)
+
+The current version uses placeholder data for demonstration purposes.
+Actual implementation can be connected to:
+
+Philippine Statistics Authority (PSA)
+Bangko Sentral ng Pilipinas (BSP)
+World Bank 
+
+👨‍💻 Authors
+Brian Joseph B. Aratia
+Robert Emmanuel C. Avelino
+Mel Stephen A. Perez
+
+School of Computer Studies
+University of San Jose-Recoletos
+Cebu, Philippines
+
+📌 Note
+
+This project is a prototype decision-support tool and is intended for academic and research purposes.

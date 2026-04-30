@@ -1,0 +1,33 @@
+streamlit
+pandas
+numpy
+
+
+Steps to Run
+
+🔹 Step 1: Open terminal in project folder
+Make sure you're inside:
+SMART-FORECASTING/
+
+🔹 Step 2: Create virtual environment (ONLY FIRST TIME)
+python -m venv .venv
+
+🔹 Step 3: Activate virtual environment
+👉 Windows (PowerShell / VS Code):
+.venv\Scripts\activate
+
+👉 Git Bash:
+source .venv/Scripts/activate
+
+You should see:
+(.venv)
+
+🔹 Step 4: Install dependencies
+python -m pip install -r requirements.txt
+
+🔹 Step 5: Run the app (IMPORTANT WAY)
+python -m streamlit run app.py
+
+👉 DO NOT use:
+
+streamlit run app.py   ❌
