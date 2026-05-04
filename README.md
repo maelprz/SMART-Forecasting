@@ -42,6 +42,43 @@ The system is implemented as a web-based dashboard using Streamlit, allowing use
 
 ---
 
+## ▶️ Quick Start
+
+1. Open a terminal in the project root folder.
+2. Create a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+3. Activate the virtual environment:
+
+Windows PowerShell:
+
+```bash
+.venv\Scripts\activate
+```
+
+Git Bash:
+
+```bash
+source .venv/Scripts/activate
+```
+
+4. Install dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+5. Run the dashboard:
+
+```bash
+python -m streamlit run app.py
+```
+
+---
+
 ## 🤖 Machine Learning Approach  
 
 This prototype does not implement a machine learning model from scratch.
