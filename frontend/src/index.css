@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-mist text-slate font-body;
+    background-image: radial-gradient(circle at top, rgba(43, 212, 189, 0.15), transparent 55%),
+      radial-gradient(circle at 20% 20%, rgba(245, 158, 11, 0.08), transparent 40%);
+    min-height: 100svh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-xl border border-white/60 shadow-soft;
+  }
+
+  .glow-ring {
+    box-shadow: 0 0 0 1px rgba(43, 212, 189, 0.5), 0 0 40px rgba(43, 212, 189, 0.25);
+  }
+
+  .grid-floor {
+    background-image: radial-gradient(circle at top, rgba(43, 212, 189, 0.18), transparent 55%),
+      repeating-linear-gradient(90deg, rgba(148, 163, 184, 0.2) 0 1px, transparent 1px 140px),
+      repeating-linear-gradient(180deg, rgba(148, 163, 184, 0.2) 0 1px, transparent 1px 140px);
+  }
+
+  .animate-rise {
+    animation: rise 900ms ease both;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

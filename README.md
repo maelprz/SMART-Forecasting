@@ -5,7 +5,7 @@
 
 ## 📌 Overview  
 
-SMART FORECAST is a web-based dashboard prototype designed to visualize and compare predicted urban unemployment trends in selected Philippine cities. The system aims to support data-driven decision-making for local government units by providing early insights into potential unemployment changes.
+SMART FORECAST is a web-based dashboard prototype designed to visualize and compare predicted urban unemployment trends in selected Philippine cities. The system aims to support data-driven decision-making for local government units by providing early insights into potential unemployment changes. The current version uses a FastAPI backend with a React + Tailwind frontend.
 
 This project is developed as part of an academic research study at the University of San Jose–Recoletos, Cebu, Philippines.
 
@@ -23,7 +23,7 @@ This project is developed as part of an academic research study at the Universit
 
 ## 🧠 System Description  
 
-The system is implemented as a web-based dashboard using Streamlit, allowing users to:
+The system is implemented as a web-based dashboard using FastAPI and React, allowing users to:
 
 - View a map of the Philippines with major cities  
 - Select a city to display relevant information  
@@ -37,7 +37,8 @@ The system is implemented as a web-based dashboard using Streamlit, allowing use
 ## ⚙️ Technology Stack  
 
 - Python  
-- Streamlit – for dashboard interface  
+- FastAPI – backend API  
+- React + Tailwind – dashboard UI  
 - Pandas – for data handling  
 
 ---
@@ -71,11 +72,22 @@ source .venv/Scripts/activate
 python -m pip install -r requirements.txt
 ```
 
-5. Run the dashboard:
+5. Run the backend API:
 
 ```bash
-python -m streamlit run app.py
+python -m uvicorn backend.main:app --reload
 ```
+
+6. Start the React frontend:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend expects the API at http://localhost:8000. To change it, set
+`VITE_API_URL` in your environment before running `npm run dev`.
 
 ---
 
